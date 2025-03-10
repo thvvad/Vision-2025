@@ -16,6 +16,5 @@ plt.xticks([]), plt.yticks([])# Ocultamos los valores de los ejes X e Y para una
 
 # Dibujamos una línea en color azul ('b') con un grosor de 5 píxeles
 plt.plot([200, 200, 400, 600, 600, 500, 400, 300, 200], [100, 300, 500, 300, 100, 50, 150, 50, 100], 'b', linewidth=5)    #x,y
-# La línea pasa por los puntos (200,100), (300,200) y (400,300)
 
-plt.show() # Mostramos la imagen con la línea dibujada encima
+plt.show() # Mostramos la imagen con la líneas dibujadas
