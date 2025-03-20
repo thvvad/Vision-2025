@@ -15,7 +15,7 @@ add = img1-img2                 # Si la resta supera los 0 habrá un desbordamie
 #Pt.2:
 add_cv2 = cv2.subtract(img1,img2)    # Si la resta es menor a 0, el valor se limita a 0 (no hay desbordamiento negativo).
 #Pt.3: 
-weighted = cv2.addWeighted(img1, 0.7, img2, -0.7, 0)     # Cada imagen tendrá un peso diferente
+weighted = cv2.addWeighted(img1, 0.7, img2, -0.3, 0)     # Cada imagen tendrá un peso diferente
 
 cv2.imshow('Resta directa',add)                     # Mostrar la imagen que resulta de la suma directa con signo
 cv2.imshow('Resta sin desbordamiento',add_cv2)      # Mostrar la imagen que resulta de la resta con la funcion cv2.subtract
