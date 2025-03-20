@@ -5,9 +5,9 @@
 import cv2
 import numpy as np
 
-# 500 x 250
-img1 = cv2.imread('3D-Matplotlib.png')  # Cargar imagen 1
-img2 = cv2.imread('mainsvmimage.png')   # Cargar imagen 2
+# 440 x 500
+img1 = cv2.imread('tata.jpg')       # Cargar imagen 1
+img2 = cv2.imread('chimmy.jpg')     # Cargar imagen 2
 
 # Multiplicar ambas imagenes pixel por pixel
 #Pt.1:
