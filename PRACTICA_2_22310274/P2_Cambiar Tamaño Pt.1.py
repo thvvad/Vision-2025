@@ -1,4 +1,4 @@
-# Practica 2: Operaciones Aritmeticas... Transpuesta
+# Practica 2: Operaciones Aritmeticas... Redimencionar una imagen
 # Vanessa Aguirre Diaz
 
 # Importar librerias:
