@@ -1,4 +1,4 @@
-# Practica 2: Operaciones Aritmeticas... Multiplicacion
+# Practica 2: Operaciones Aritmeticas... Division
 # Vanessa Aguirre Diaz
 
 # Importar librerias:

@@ -12,7 +12,7 @@ alto, ancho = img.shape[:2]
 
 # Nuevo tamaño manteniendo la relación de aspecto (reducir a 50%)
 factor1 = 0.5
-factor2 = 3
+factor2 = 1.5
 
 nuevo_ancho1 = int(ancho * factor1)
 nuevo_alto1 = int(alto * factor1)
