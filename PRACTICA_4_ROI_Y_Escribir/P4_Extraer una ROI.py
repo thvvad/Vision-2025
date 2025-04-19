@@ -1,4 +1,4 @@
-# Practica 4:Extraer una ROI (Region de interes)
+# Practica 4:Extraer una ROI rectangular (Region de interes)
 
 #Importar libreria
 import cv2

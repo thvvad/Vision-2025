@@ -51,3 +51,9 @@ plt.ylabel('Número de píxeles')
 # Ajustar distribución de los subplots
 plt.tight_layout()
 plt.show()
+
+# Esperar a que el usuario presione una tecla
+cv2.waitKey(0)
+
+# Cerrar todas las ventanas abiertas
+cv2.destroyAllWindows()

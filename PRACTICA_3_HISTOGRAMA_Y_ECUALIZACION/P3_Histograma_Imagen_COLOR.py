@@ -40,4 +40,10 @@ plt.legend()                                        # Mostrar leyenda con nombre
 plt.grid(True)                                      # Mostrar una cuadrícula de fondo
 
 cv2.imshow('Imagen',imagen)             # Mostrar la imagen
-plt.show()# Mostrar el gráfico
+plt.show()                              # Mostrar el gráfico
+
+# Esperar a que el usuario presione una tecla
+cv2.waitKey(0)
+
+# Cerrar todas las ventanas abiertas
+cv2.destroyAllWindows()
