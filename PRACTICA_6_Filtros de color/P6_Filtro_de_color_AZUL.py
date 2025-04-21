@@ -1,4 +1,4 @@
-# Practica 6: Filtros de color (ROJO)
+# Practica 6: Filtros de color (AZUL)
 
 import cv2
 import numpy as np
@@ -6,9 +6,14 @@ import numpy as np
 # Inicia captura de video desde la cámara web (índice 0)
 cap = cv2.VideoCapture(0)
 
-# Define los valores HSV mínimo y máximo (puedes modificarlos)
-min_HSV = np.array([0, 100, 100])     # Rojo puro (zona baja)
-max_HSV = np.array([10, 255, 255])
+# Define los valores HSV mínimo y máximo
+# Rango mas abierto:
+#min_HSV = np.array([90, 50, 50])     
+#max_HSV = np.array([130, 255, 255])
+
+# Mas cerrado (MEJOR)
+min_HSV = np.array([100, 100, 100])     
+max_HSV = np.array([115, 255, 255])
 
 # ---------- Visualización del rango de colores ----------
 height, width = 100, 300
