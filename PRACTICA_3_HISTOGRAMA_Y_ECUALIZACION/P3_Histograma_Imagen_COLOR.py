@@ -5,7 +5,7 @@ import cv2  # OpenCV para procesamiento de imágenes
 import matplotlib.pyplot as plt  # Matplotlib para mostrar imágenes y graficar histogramas
 
 # Cargar la imagen en color (OpenCV la carga en formato BGR por defecto)
-imagen = cv2.imread('tata.jpg')  # Cambia 'tata.jpg' por la ruta o nombre de tu imagen
+imagen = cv2.imread('v3.jpg')  
 
 # Convertir la imagen de BGR a RGB (para que se vea correctamente con matplotlib)
 imagen_rgb = cv2.cvtColor(imagen, cv2.COLOR_BGR2RGB)

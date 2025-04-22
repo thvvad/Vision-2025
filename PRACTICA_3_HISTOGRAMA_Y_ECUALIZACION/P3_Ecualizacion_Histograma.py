@@ -5,7 +5,7 @@ import cv2  # OpenCV para procesamiento de imágenes
 import matplotlib.pyplot as plt  # Matplotlib para mostrar imágenes y gráficos
 
 # Cargar imagen en color
-img_color = cv2.imread('flores.jpg')  # Cambia el nombre por el de tu imagen
+img_color = cv2.imread('flores.jpg')
 
 # Convertir a escala de grises
 img_gray = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)
