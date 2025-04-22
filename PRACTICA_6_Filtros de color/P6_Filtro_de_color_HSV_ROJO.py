@@ -1,4 +1,4 @@
-# Practica 6: Filtros de color (ROJO)
+# Practica 6: Filtros de color HSV (ROJO)
 
 import cv2
 import numpy as np
