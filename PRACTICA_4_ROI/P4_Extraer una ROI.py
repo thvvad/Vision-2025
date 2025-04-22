@@ -3,17 +3,16 @@
 #Importar libreria
 import cv2
 
-# Cargar la imagen desde archivo (reemplaza 'tu_imagen.jpg' con el nombre de tu imagen)
-imagen = cv2.imread('v.jpeg')
-
+# Cargar la imagen desde archivo
+imagen = cv2.imread('v2.jpeg')
 
 # Coordenadas de la esquina superior izquierda de la ROI
 x = 100  # posición en x
-y = 50   # posición en y
+y = 150   # posición en y
 
 # Tamaño de la ROI (ancho y alto)
 w = 200  # ancho de la ROI
-h = 150  # alto de la ROI
+h = 250  # alto de la ROI
 
 # Dibujar un rectángulo verde sobre la imagen para mostrar la ROI
 cv2.rectangle(imagen, (x, y), (x + w, y + h), (0, 255, 0), 2)

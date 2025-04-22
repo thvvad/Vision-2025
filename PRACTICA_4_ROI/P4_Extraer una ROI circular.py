@@ -5,15 +5,11 @@ import cv2
 import numpy as np
 
 # Cargar la imagen
-imagen = cv2.imread('v.jpeg')
-
-if imagen is None:
-    print("Error: No se pudo cargar la imagen.")
-    exit()
+imagen = cv2.imread('v2.jpeg')
 
 # Centro del círculo y radio
 centro_x = 200
-centro_y = 150
+centro_y = 250
 radio = 100
 
 # Dibujar el círculo sobre la imagen original
