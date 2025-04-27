@@ -8,9 +8,8 @@ cap = cv2.VideoCapture(0)
 
 # Define los valores YUV mínimo y máximo para detectar azul
 # El canal U es el que representa los tonos azulados
-# Este es un rango moderadamente cerrado
-min_YUV = np.array([0, 140, 100])      # Y bajo, U alto (azul), V medio
-max_YUV = np.array([255, 255, 140])    # Y alto, U máximo, V bajo
+min_YUV = np.array([0, 150, 90])      # Y bajo, U alto (azul), V medio
+max_YUV = np.array([200, 255, 130])    # Y alto, U máximo, V bajo
 
 # ---------- Visualización del rango de colores YUV ----------
 height, width = 100, 300

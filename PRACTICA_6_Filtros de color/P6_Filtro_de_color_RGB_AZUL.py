@@ -8,8 +8,8 @@ cap = cv2.VideoCapture(0)
 
 # Define el rango mínimo y máximo del color azul en RGB
 # Rango más abierto
-#min_RGB = np.array([0, 0, 150])        # B: alto, G: bajo, R: bajo (azul)
-#max_RGB = np.array([150, 150, 255])    # Azul claro sin llegar a celeste brillante   
+min_RGB = np.array([0, 0, 150])        # B: alto, G: bajo, R: bajo (azul)
+max_RGB = np.array([150, 150, 255])    # Azul claro sin llegar a celeste brillante   
 
 # OpenCV usa formato BGR en lugar de RGB, por lo que invertimos el orden
 bgr_min = min_RGB[::-1]           # Invierte los valores a BGR (Blue, Green, Red)

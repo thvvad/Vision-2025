@@ -8,8 +8,8 @@ cap = cv2.VideoCapture(0)
 
 # Define el rango mínimo y máximo del color rojo en YUV
 # El canal V (rojo) debe ser alto para detectar tonos rojos
-min_YUV = np.array([0, 120, 140])     # Y bajo, U medio, V alto
-max_YUV = np.array([255, 180, 255])   # Y alto, U medio, V máximo
+min_YUV = np.array([0, 90, 170])     # Y bajo, U medio, V alto
+max_YUV = np.array([200, 140, 255])   # Y alto, U medio, V máximo
 
 # Crear una barra de gradiente visual basada en el rango YUV
 def create_color_bar_yuv(min_color, max_color, width=300, height=50):
@@ -46,4 +46,15 @@ while True:
     # Mostrar la máscara en blanco y negro
     cv2.imshow('mask', mask)
 
-    # Mostrar la imagen
+    # Mostrar la imagen resultante con los tonos verdes detectados
+    cv2.imshow('res', res)
+
+    # Mostrar la barra de color
+    cv2.imshow('Color Range (YUV)', color_bar)
+
+    # Salir si se presiona ESC
+    if cv2.waitKey(5) & 0xFF == 27:
+        break
+
+cap.release()
+cv2.destroyAllWindows()

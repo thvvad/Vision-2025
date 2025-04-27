@@ -6,7 +6,7 @@ import numpy as np
 # Inicia captura de video desde la cámara web (índice 0)
 cap = cv2.VideoCapture(0)
 
-# Define los valores HSV mínimo y máximo (puedes modificarlos)
+# Define los valores HSV mínimo y máximo 
 min_HSV = np.array([0, 100, 100])     # Rojo puro (zona baja)
 max_HSV = np.array([10, 255, 255])
 
