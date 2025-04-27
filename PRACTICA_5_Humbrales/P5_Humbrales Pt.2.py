@@ -1,3 +1,6 @@
+#Practica 5: Humbrales
+
+#Importar librerias
 import numpy as np                 # Librería para manejo de arreglos y matrices
 import matplotlib.pyplot as plt   # Para mostrar imágenes gráficamente
 import cv2                        # OpenCV: procesamiento de imágenes
@@ -11,7 +14,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)           # Convertir a escala de g
 # ---------------------------------------
 # 2. Definir parámetros para umbrales fijos
 # ---------------------------------------
-thresh_val = 127    # Umbral manual
+thresh_val = 4    # Umbral manual
 max_val = 255       # Valor máximo (blanco)
 
 # ---------------------------------------

@@ -33,7 +33,7 @@ plt.figure(figsize=(12, 12))
 # Primer umbral adaptativo
 plt.subplot(2, 2, 1)
 plt.imshow(thresh1, cmap='gray')
-plt.title("Caso 1: BLOQUE=11, C=2")
+plt.title("Caso 1: BLOQUE=110, C=2")
 plt.axis('off')
 
 # Segundo umbral adaptativo
@@ -45,7 +45,7 @@ plt.axis('off')
 # Tercer umbral adaptativo (gaussiano)
 plt.subplot(2, 2, 3)
 plt.imshow(thresh3, cmap='gray')
-plt.title("Caso 3: GAUSSIANO, BLOQUE=11, C=2")
+plt.title("Caso 3: GAUSSIANO, BLOQUE=110, C=2")
 plt.axis('off')
 
 # Cuarto umbral adaptativo (gaussiano)
