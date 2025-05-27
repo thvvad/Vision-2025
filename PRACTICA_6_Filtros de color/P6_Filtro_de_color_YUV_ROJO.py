@@ -1,7 +1,7 @@
 # Practica 6: Filtro de color YUV (rojo)
 
-import cv2
-import numpy as np
+import cv2          # Para procesamiento de imágenes y visión por computadora
+import numpy as np  # Para trabajar con arreglos y operaciones numéricas
 
 # Inicia la captura de video desde la cámara principal
 cap = cv2.VideoCapture(0)
