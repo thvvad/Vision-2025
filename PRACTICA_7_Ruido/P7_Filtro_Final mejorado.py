@@ -37,7 +37,7 @@ while True:
     res_crudo = cv2.bitwise_and(frame, frame, mask=mask)
 
     # 3. Crear kernel estructurante
-    kernel = np.ones((6, 6), np.uint8)
+    kernel = np.ones((26, 26), np.uint8)
 
     # 4. TopHat y BlackHat desde la máscara cruda (antes de cierre y apertura)
     tophat = cv2.morphologyEx(mask, cv2.MORPH_TOPHAT, kernel)
@@ -62,7 +62,7 @@ while True:
     cv2.imshow('Mascara Cruda', mask)
     cv2.imshow('Crudo Aplicado', res_crudo)
     cv2.imshow('Mascara Mejorada (Cruda+TopHat+BlackHat)', mascara_mejorada)
-    #cv2.imshow('Mascara Filtrada (Cierre + Apertura)', opening)
+    cv2.imshow('Mascara Filtrada (Cierre + Apertura)', opening)
     #cv2.imshow('Resultado Solo con Mascara Filtrada', resultado_filtrado)
     #cv2.imshow('TopHat (blancos pequeños)', tophat)
     #cv2.imshow('BlackHat (negros pequeños)', blackhat)
