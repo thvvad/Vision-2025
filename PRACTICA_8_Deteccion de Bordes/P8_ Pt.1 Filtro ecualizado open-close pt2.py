@@ -7,9 +7,9 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 
 # Parámetros ajustables
-contraste_manual = 2.5       # Aumenta o disminuye el contraste (1 = sin cambio)
+contraste_manual = 1       # Aumenta o disminuye el contraste (1 = sin cambio)
 umbral_sobel = 250         # Umbral para binarizar Sobel X y Y
-kernel_morfologico = 2     # Tamaño del kernel para apertura y cierre (debe ser impar y >1)
+kernel_morfologico = 1     # Tamaño del kernel para apertura y cierre (debe ser impar y >1)
 
 while True:
     ret, frame = cap.read()

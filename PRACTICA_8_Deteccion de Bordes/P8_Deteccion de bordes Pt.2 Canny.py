@@ -1,6 +1,6 @@
-import cv2                  # Importa la librería OpenCV, que se usa para procesar imágenes y video.
 # Practica 8: Deteccion de bordes Pt.2: Canny
 
+import cv2                  # Importa la librería OpenCV, que se usa para procesar imágenes y video.
 import numpy as np          # Importa NumPy para manipular matrices (arrays), útil para definir rangos de color.
 
 cap = cv2.VideoCapture(0)   # Inicializa la captura de video desde la cámara con índice 0 (cámara principal).
