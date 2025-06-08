@@ -18,13 +18,12 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Convierte la imagen en escala de grises a tipo de dato float32, requerido por la función de esquinas
 gray = np.float32(gray)
 
-# Aplica el algoritmo de detección de esquinas Shi-Tomasi
-# Parámetros:
+corners = cv2.goodFeaturesToTrack(gray, 100, 0.1, 10) # Aplica el algoritmo de detección de esquinas Shi-Tomasi
 #  - gray: imagen en escala de grises
 #  - 100: número máximo de esquinas a detectar
 #  - 0.01: calidad mínima aceptada de la esquina (entre 0 y 1)
 #  - 10: distancia mínima entre esquinas detectadas
-corners = cv2.goodFeaturesToTrack(gray, 100, 0.01, 10)
+
 
 # Convierte las coordenadas de las esquinas a enteros (para poder usarlas en funciones de dibujo)
 corners = np.int0(corners)
