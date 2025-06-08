@@ -1,10 +1,9 @@
-# Practica 9: Temple Matching con roi manual
-
+# Practica #9: Temple Matching ´para mismo objeto, diferente escala
 import cv2
 import numpy as np
 
 # Cargar imagen original a color
-img_rgb = cv2.imread('opencv-template-matching-python-tutorial.jpg')
+img_rgb = cv2.imread('tri.jpg')
 img_display = img_rgb.copy()
 
 # Selección manual de la plantilla
@@ -15,8 +14,8 @@ template_gray = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
 # Convertimos imagen original a escala de grises
 img_gray_original = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 
-threshold = 0.85  # Umbral de coincidencia
-scales = np.linspace(0.5, 1.5, 20)  # Escalas de 50% a 150%, con 20 pasos
+threshold = 0.8  # Umbral de coincidencia
+scales = np.linspace(0.5, 2, 50)  # Escalas de 50% a 150%, con 20 pasos
 
 # Para cada escala
 for scale in scales:
@@ -42,5 +41,3 @@ for scale in scales:
 cv2.imshow('Detected at Multiple Scales', img_rgb)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
