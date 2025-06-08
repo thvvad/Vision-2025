@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 # Carga la imagen original
-img = cv2.imread('fig.jpg')
+img = cv2.imread('figuras.jpg')
 
 # Crea una imagen negra del mismo tamaño
 mascara_negra = np.zeros_like(img)
@@ -19,7 +19,7 @@ roi = img[y:y+h, x:x+w]
 roi_gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
 
 # Aplica umbralización binaria (blanco y negro)
-_, roi_bin = cv2.threshold(roi_gray, 227, 255, cv2.THRESH_BINARY)
+_, roi_bin = cv2.threshold(roi_gray, 150, 255, cv2.THRESH_BINARY)
 
 # Convierte la imagen umbralizada a 3 canales para poder insertarla de nuevo
 roi_bin_color = cv2.cvtColor(roi_bin, cv2.COLOR_GRAY2BGR)
