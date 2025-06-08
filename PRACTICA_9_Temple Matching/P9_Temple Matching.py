@@ -21,7 +21,7 @@ res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
 # El método `cv2.TM_CCOEFF_NORMED` compara cuán similares son los patrones normalizados
 
 # Se define un umbral de similitud. Solo coincidencias con valor >= 0.8 serán consideradas válidas
-threshold = 0.8
+threshold = 0.85
 # 0.7 para un rango mas abierto
 
 # Se obtienen las coordenadas (x, y) donde el valor de coincidencia es mayor o igual al umbral

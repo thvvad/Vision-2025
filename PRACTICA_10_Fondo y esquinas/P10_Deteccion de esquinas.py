@@ -1,4 +1,7 @@
 # Practica 10: Detección de esquinas
+# Hacerlo sobre el filtro de color mejorado para quitar el fondo
+# Pt 1: resultados de este codigo
+# Pt 2: adaptar este codigo al filtro
 
 # Importa la librería NumPy, que permite trabajar con matrices y operaciones matemáticas
 import numpy as np
